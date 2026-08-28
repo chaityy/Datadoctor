@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datadoctor"
+version = "1.0.0"
+description = "DataDoctor — a CSV health analyzer that scores data quality and flags missing values, duplicates, outliers, invalid dates, empty columns, and inconsistent labels."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Chaity" }]
+dependencies = [
+    "pandas>=1.5",
+    "rich>=13.0",
+]
+
+[project.scripts]
+datadoctor = "datadoctor.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["datadoctor*"]
