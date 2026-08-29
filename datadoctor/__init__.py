@@ -6,3 +6,6 @@ inconsistent categorical labels) and reports a single health score.
 """
 
 __version__ = "1.0.0"
+
+# Made by Chaity.
+# jchaitanya9290@gmail.com
